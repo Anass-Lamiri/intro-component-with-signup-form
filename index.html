@@ -28,10 +28,23 @@
             </div>
             <div class="right-card">
                 <form class="form">
-                    <input type="text" placeholder="First Name" la name="first-name" id="first-name"  required>
-                    <input type="text" placeholder="Last Name" name="last-name" id="last-name"  required>
-                    <input type="email" placeholder="Email Address" name="email" id="email"  required>
-                    <input type="password" placeholder="Password" name="password" id="password"  required>
+                    <div class="input-container">
+                        <input type="text" placeholder="First Name" la name="first-name" id="first-name"  required>
+                        <p class="fname-error">First Name cannot be empty</p>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Last Name" name="last-name" id="last-name"  required>
+                        <p class="fname-error">Last Name cannot be empty</p>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" placeholder="Email Address" name="email" id="email"  required>
+                        <p class="fname-error">Looks like this is not an email</p>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Password" name="password" id="password"  required>
+                        <p class="fname-error">Password cannot be empty</p>
+                    </div>
+
                     <input type="submit" value="Claim your free trial" id="submit">
                 </form>
                 <p class="note">
@@ -42,6 +55,7 @@
         </section>
     </main>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>

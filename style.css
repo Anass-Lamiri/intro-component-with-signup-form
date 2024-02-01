@@ -247,7 +247,45 @@ body {
 }
 
 
+/* validation design */
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fname-error {
+    display: none;
+}
+
+.error .fname-error {
+    display: block;
+    font-family: var(--ff);
+    font-size: 12px;
+    font-weight: var(--fw-SemiBold);
+    color: var(--clr-Red);
+    text-align: right;
+}
+
+.error input {
+    outline: none;
+    border: 3px var(--clr-Red) solid;
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 18px);
+}
+.error input:focus {
+    border: 3px var(--clr-Red) solid;
+}
+.error input::placeholder {
+    visibility: hidden ;
+}
+
+.error #email::placeholder {
+    visibility: visible;
+    color: var(--clr-Red);
+}
 
 
 
